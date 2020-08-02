@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 proper ui implementation hasnt been done yet.
 
 Currently the qrcode is visualized using BW colored divs each of 10px square.
