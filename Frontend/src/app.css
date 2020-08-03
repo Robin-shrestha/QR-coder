@@ -1,0 +1,50 @@
+.qrtext-container {
+  display: flex;
+  font-size: 1.5em;
+  justify-content: center;
+  align-content: center;
+  margin: 2em 0;
+}
+.qrtext-label {
+  font-weight: 600;
+}
+.qrtext-input {
+  width: 50vw;
+  height: 2em;
+  margin: 0 20px;
+  padding: 5px;
+  border-radius: 5px;
+  background: linear-gradient(to bottom right, #fff, rgb(226, 230, 228));
+}
+.button {
+  background: linear-gradient(#ccc, #555);
+  color: #fff;
+  border-radius: 5px;
+  height: 2em;
+  transition: all 0.25s;
+}
+.button:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.container-qr {
+  display: flex;
+  flex-direction: column;
+}
+.img-qrcode {
+  align-self: center;
+}
+.container-dl {
+  display: flex;
+  justify-content: center;
+}
+.dl-off {
+  display: none;
+}
+.dl-on {
+  display: block;
+  margin: 1em;
+  justify-self: center;
+  width: max-content;
+}
