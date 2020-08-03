@@ -9,17 +9,10 @@ def qrcoder(data):
     )
     qr.add_data(data)
     qr.make(fit=True)
-    # img = qr.make_image(fill_color="black", back_color="white")
-    # in_byte = img.tobytes().decode('latin1')
-    # img.save('test.png')
-    return qr.get_matrix()
+    qrdata=[]
+    y = qr.get_matrix()
+    for item in y:
+        qrdata.append([int(elm) for elm in item])
+    return qrdata
 
 
-# qrdata = qrcoder('some d  adasdasdasdasdasdsasdasdasdssdata')
-# print(help(qrdata))
-# print(qrdata.print_ascii())
-# qrdata.print_ascii()
-# print(len(qrdata.get_matrix()))
-
-# print(len(qrdata.get_matrix()[0]))
-# print((qrdata.get_matrix()))
